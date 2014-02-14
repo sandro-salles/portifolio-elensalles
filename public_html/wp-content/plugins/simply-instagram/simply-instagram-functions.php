@@ -84,11 +84,12 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
 	 * blank return when display value is 
 	 * greater than API return
 	*/
-	
+
+	die($hashtags);	
 	$hashtags = explode(',', $hashtags);
 
 	die($hashtags);
-	
+
 	if( count( $data['data'] ) > $count ):
 		$query = $count;
 	else:
