@@ -562,7 +562,7 @@ class instagram_recent_media extends WP_Widget {
 		echo $before_title . $widget_title . $after_title;
 		echo $short_desc . '<div class="clear"></div>';
 		
-		echo sInstShowWidgetData( sInstGetRecentMedia( user_id(), access_token() ), $instance[ 'max_display' ], $instance[ 'size' ], "sInstRecentMediaWid", $instance['display_caption'], , $instance[ 'hashtags' ]);
+		echo sInstShowWidgetData( sInstGetRecentMedia( user_id(), access_token() ), $instance[ 'max_display' ], $instance[ 'size' ], "sInstRecentMediaWid", $instance['display_caption'], $instance[ 'hashtags' ]);
 	?>
 	<script type="text/javascript" charset="utf-8">	  
 	  jQuery(document).ready(function(){
