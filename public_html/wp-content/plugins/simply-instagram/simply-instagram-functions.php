@@ -85,10 +85,7 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
 	 * greater than API return
 	*/
 
-	die($hashtags);	
 	$hashtags = explode(',', $hashtags);
-
-	die($hashtags);
 
 	if( count( $data['data'] ) > $count ):
 		$query = $count;
@@ -100,6 +97,9 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
 
  		if(!empty($hashtags)) {
  			foreach ($hashtags as $hashtag) {
+
+ 				var_dump($data['data']);
+ 				die();
 	 			if(!in_array($hashtag, $data['data'][$i]['tags'])) {
 	 				continue;
 	 			}
