@@ -562,7 +562,7 @@ class instagram_recent_media extends WP_Widget {
 		echo $before_title . $widget_title . $after_title;
 		echo $short_desc . '<div class="clear"></div>';
 		
-		echo sInstShowWidgetData( sInstGetRecentMedia( user_id(), access_token() ), $instance[ 'max_display' ], $instance[ 'size' ], "sInstRecentMediaWid", $instance['display_caption'] );
+		echo sInstShowWidgetData( sInstGetRecentMedia( user_id(), access_token() ), $instance[ 'max_display' ], $instance[ 'size' ], "sInstRecentMediaWid", $instance['display_caption'], , $instance[ 'hashtags' ]);
 	?>
 	<script type="text/javascript" charset="utf-8">	  
 	  jQuery(document).ready(function(){
@@ -587,6 +587,7 @@ class instagram_recent_media extends WP_Widget {
 		$instance['auto_play'] = strip_tags($new_instance['auto_play']);
 		$instance['size'] = strip_tags($new_instance['size']);
 		$instance['display_caption'] = strip_tags($new_instance['display_caption']);
+		$instance['hashtags'] = strip_tags($new_instance['hashtags']);
 		
 		return $instance;
 	}
@@ -601,6 +602,7 @@ class instagram_recent_media extends WP_Widget {
 			$auto_play = esc_attr( $instance[ 'auto_play' ] );
 			$size = esc_attr( $instance[ 'size' ] );
 			$display_caption = esc_attr( $instance[ 'display_caption' ] );
+			$hashtags = esc_attr( $instance[ 'hashtags' ] );
 		}
 		else {
 			$widget_title = __( 'Recent Media', 'text_domain' );
@@ -610,6 +612,7 @@ class instagram_recent_media extends WP_Widget {
 			$auto_play = __( 'true', 'auto_play' );
 			$size = __( '125', 'size' );
 			$display_caption = __( 'true', 'display_caption' );
+			$hashtags = __( '', 'hashtags' );
 		}
 		?>
 		
@@ -637,6 +640,11 @@ class instagram_recent_media extends WP_Widget {
 		<span style="font-style: italic; font-size: 11px;">prettyPhoto sometimes unresponsive on long photo description and this is the major drawback in previous version of Simply Instagram. Turn this feature off when it does.</span>
 		</p>
 		
+		<p>
+		<label for="<?php echo $this->get_field_id('hashtags'); ?>"><?php _e('Filter by hashtags:'); ?></label>		
+		<input class="widefat" class="widefat" id="<?php echo $this->get_field_id('hashtags'); ?>" name="<?php echo $this->get_field_name('hashtags'); ?>" type="text" value="<?php echo $hashtags; ?>" />
+		</p>
+
 		<p>
 		<label for="<?php echo $this->get_field_id('theme'); ?>"><?php _e('Theme:'); ?></label> 
 		<select class="widefat" id="<?php echo $this->get_field_id('theme'); ?>" name="<?php echo $this->get_field_name('theme'); ?>">	
