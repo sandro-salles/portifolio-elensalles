@@ -86,14 +86,12 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
 	*/
 
 	$hashtags = explode(',', $hashtags);
+	$query_count = count($data['data']);
 
-	echo count($data['data']);
-	die();
-
-	if( count( $data['data'] ) > $count ):
+	if( $query_count > $count ):
 		$query = $count;
 	else:
-		$query = count( $data['data'] );
+		$query = $query_count;
 	endif;
 	
  	for( $i = 0; $i < $query; $i++ ):
@@ -111,7 +109,7 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
  		}
  		
  		if ($escape) {
- 			if($i < $query) {
+ 			if($i <= $query && $query < $query_count) {
  				$query++;	
  			}
  			
