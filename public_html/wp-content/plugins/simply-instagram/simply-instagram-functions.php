@@ -96,23 +96,20 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
  	for( $i = 0; $i < $query; $i++ ):
 
  		$escape = FALSE;
- 	
+
  		if(!empty($hashtags)) {
  			foreach ($hashtags as $hashtag) {
 
- 				echo $hashtag;
- 				echo "<pre>";
- 				echo print_r($data['data'][$i]['tags'], true);
- 				echo "</pre>";
- 				
 	 			if(!in_array($hashtag, $data['data'][$i]['tags'])) {
-	 				continue;
-	 			} else {
-	 				echo "in array!";
+	 				$escape = TRUE;
+	 				break;
 	 			}
 	 		}	
  		}
  		
+ 		if ($escape) {
+ 			continue;
+ 		}
 
 		$output = '<a href="' . $data['data'][$i]['images']['standard_resolution']['url'] . '" rel="' . $customRel . '[instagram]" title="' . htmlspecialchars( $data['data'][$i]['caption']['text'], ENT_QUOTES ). '">';
 			$output .= '<div class="si-content" style=" display: none; margin: 10px; "><div class="clear"></div>';
