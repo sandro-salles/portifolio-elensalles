@@ -76,7 +76,7 @@ function sInstGetSelfFeed( $access_token )
 /**
 * Show data in widget form
 */
-function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWidget", $displayCaption="true" )
+function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWidget", $displayCaption="true", $hashtags='')
 {
 	/**
 	 * Determine query return
@@ -85,6 +85,8 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
 	 * greater than API return
 	*/
 	
+	$hashtags = explode(',', $hashtags);
+
 	if( count( $data['data'] ) > $count ):
 		$query = $count;
 	else:
@@ -92,6 +94,16 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
 	endif;
 	
  	for( $i = 0; $i < $query; $i++ ):
+
+ 		if(!empty($hashtags)) {
+ 			foreach ($hashtags as $hashtag) {
+	 			if(!in_array($hashtag, $data['data'][$i]['tags'])) {
+	 				continue;
+	 			}
+	 		}	
+ 		}
+ 		
+
 		$output = '<a href="' . $data['data'][$i]['images']['standard_resolution']['url'] . '" rel="' . $customRel . '[instagram]" title="' . htmlspecialchars( $data['data'][$i]['caption']['text'], ENT_QUOTES ). '">';
 			$output .= '<div class="si-content" style=" display: none; margin: 10px; "><div class="clear"></div>';
 			
