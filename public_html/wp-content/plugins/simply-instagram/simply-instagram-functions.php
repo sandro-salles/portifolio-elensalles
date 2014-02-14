@@ -98,6 +98,7 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
  		if(!empty($hashtags)) {
  			foreach ($hashtags as $hashtag) {
 
+ 				echo $hashtag;
  				echo "<pre>";
  				echo print_r($data['data'][$i]['tags'], true);
  				echo "</pre>";
