@@ -87,8 +87,9 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
 
 	$hashtags = explode(',', $hashtags);
 
-	die(count($data['data']));
-	
+	echo count($data['data']);
+	die();
+
 	if( count( $data['data'] ) > $count ):
 		$query = $count;
 	else:
