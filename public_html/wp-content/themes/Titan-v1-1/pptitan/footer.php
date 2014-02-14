@@ -57,7 +57,7 @@
 </div>
 
 </div>
-<img src="http://geekpics.net/images/2013/09/18/sBRAuO.jpg"><br>
+
 <?php
 	global $pp_homepage_style;
 ?>
