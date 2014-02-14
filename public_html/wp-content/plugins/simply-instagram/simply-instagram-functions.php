@@ -99,9 +99,9 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
  			foreach ($hashtags as $hashtag) {
 
  				echo "<pre>";
- 				echo print_r($data['data'], true);
+ 				echo print_r($data['data'][$i]['tags'], true);
  				echo "</pre>";
- 				die();
+ 				
 	 			if(!in_array($hashtag, $data['data'][$i]['tags'])) {
 	 				continue;
 	 			}
