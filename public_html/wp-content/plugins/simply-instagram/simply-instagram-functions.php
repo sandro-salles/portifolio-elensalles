@@ -108,6 +108,7 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
  		}
  		
  		if ($escape) {
+ 			$i--;
  			continue;
  		}
 
