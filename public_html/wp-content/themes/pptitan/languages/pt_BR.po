@@ -3,15 +3,22 @@ msgstr ""
 "Project-Id-Version: Minos Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-10 22:41+0700\n"
-"PO-Revision-Date: 2013-05-10 22:41+0700\n"
+"PO-Revision-Date: Fri Feb 14 2014 19:52:39 GMT-0200 (BRST)\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Loco-Source-Locale: pt_BR\n"
 "X-Poedit-KeywordsList: __;gettext;gettext_noop;_e;_n\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Loco-Target-Locale: en_GB\n"
+"X-Generator: Loco - https://localise.biz/"
 
 #: ../404.php:33
 msgid "404 Not Found"
@@ -22,7 +29,6 @@ msgid "Apologies, but the page you requested could not be found."
 msgstr ""
 
 #: ../archive.php:69 ../archive.php:71 ../archive.php:73
-#, php-format
 msgid "%s"
 msgstr ""
 
@@ -42,7 +48,6 @@ msgid "Read more"
 msgstr ""
 
 #: ../category.php:45 ../tag.php:46
-#, php-format
 msgid " %s"
 msgstr ""
 
@@ -64,35 +69,35 @@ msgstr "Mensagem"
 
 #: ../contact.php:210 ../contact.php:211
 msgid "Address"
-msgstr "Endereço"
+msgstr ""
 
 #: ../contact.php:219 ../contact.php:220
 msgid "Phone"
 msgstr "Telefone"
 
 #: ../contact.php:228 ../contact.php:229
-msgid "Celular"
+msgid "Mobile"
 msgstr ""
 
 #: ../contact.php:237 ../contact.php:238
-msgid "Nome da empresa"
+msgid "Company Name"
 msgstr ""
 
 #: ../contact.php:246 ../contact.php:247
-msgid "País"
+msgid "Country"
 msgstr ""
 
 #: ../contact.php:339
 msgid "Email from contact form"
-msgstr "E-mail de Contato"
+msgstr ""
 
 #: ../contact.php:342
 msgid "Thank you! We will get back to you as soon as possible"
-msgstr "Obrigado! Enviarei uma resposta assim que possível"
+msgstr ""
 
 #: ../contact.php:345
 msgid "Oops! something went wrong, please try to submit later."
-msgstr "Oops! Alguma coisa deu errado, por favor tente enviar o formulário novamente em alguns instantes"
+msgstr ""
 
 #: ../functions.php:135 ../lib/menu.lib.php:7
 msgid "Primary Menu"
@@ -121,7 +126,6 @@ msgid "View Project"
 msgstr ""
 
 #: ../search.php:47
-#, php-format
 msgid "Results for &quot;%s&quot;"
 msgstr ""
 
@@ -267,8 +271,8 @@ msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-media-library.php:300
 msgid ""
-"Associate tags with image attachments to easily include them in multiple "
-"image galleries."
+"Associate tags with image attachments to easily include them in multiple image "
+"galleries."
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:17
@@ -276,7 +280,6 @@ msgid "Gallery Description"
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:41
-#, php-format
 msgid "Gallery updated. <a href=\"%s\">View gallery</a>"
 msgstr ""
 
@@ -293,12 +296,10 @@ msgid "Gallery updated."
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:46
-#, php-format
 msgid "Gallery restored to revision from %s"
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:47
-#, php-format
 msgid "Gallery published. <a href=\"%s\">View gallery</a>"
 msgstr ""
 
@@ -307,15 +308,13 @@ msgid "Gallery saved."
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:49
-#, php-format
 msgid "Gallery submitted. <a target=\"_blank\" href=\"%s\">Preview gallery</a>"
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:50
-#, php-format
 msgid ""
-"Gallery scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
-"\"%2$s\">Preview gallery</a>"
+"Gallery scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview gallery</a>"
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:52
@@ -323,9 +322,7 @@ msgid "M j, Y @ G:i"
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:53
-#, php-format
-msgid ""
-"Gallery draft updated. <a target=\"_blank\" href=\"%s\">Preview gallery</a>"
+msgid "Gallery draft updated. <a target=\"_blank\" href=\"%s\">Preview gallery</a>"
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-add.php:54
@@ -418,18 +415,12 @@ msgid "Delete"
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-helper.php:213
-#, php-format
 msgid "You are about to delete <strong>%s</strong>."
 msgstr ""
 
 #: ../plugins/shiba-media-library/shiba-mlib-helper.php:214
 msgid "Continue"
 msgstr ""
-
-#: ../plugins/shiba-media-library/shiba-mlib-helper.php:215
-#, fuzzy
-msgid "Cancel"
-msgstr "Leave a Reply"
 
 #: ../plugins/shiba-media-library/shiba-mlib-helper.php:219
 msgid "Undo"
@@ -459,7 +450,6 @@ msgstr ""
 #: ../plugins/shiba-media-library/shiba-mlib-manage.php:59
 #: ../plugins/shiba-media-library/shiba-mlib-upload.php:99
 #: ../plugins/shiba-media-library/shiba-mlib-upload.php:109
-#, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr ""
 
@@ -536,11 +526,6 @@ msgstr ""
 msgid "You cannot modify this taxonomy."
 msgstr ""
 
-#: ../templates/comments-form.php:13
-#, fuzzy
-msgid "Leave A Reply"
-msgstr "Leave a Reply"
-
 #: ../templates/comments-form.php:30
 msgid "Website"
 msgstr ""
@@ -567,6 +552,12 @@ msgid ""
 "enter your password below"
 msgstr ""
 
+#: ../plugins/shiba-media-library/shiba-mlib-helper.php:215
 #, fuzzy
-#~ msgid "Cancel Reply"
-#~ msgstr "Leave a Reply"
+msgid "Cancel"
+msgstr "Leave a Reply"
+
+#: ../templates/comments-form.php:13
+#, fuzzy
+msgid "Leave A Reply"
+msgstr "Leave a Reply"
