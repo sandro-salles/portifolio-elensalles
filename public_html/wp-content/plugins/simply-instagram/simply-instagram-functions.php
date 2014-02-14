@@ -95,6 +95,8 @@ function sInstShowWidgetData( $data, $count='9', $width='75', $customRel="sIntWi
 	
  	for( $i = 0; $i < $query; $i++ ):
 
+ 		$escape = FALSE;
+ 	
  		if(!empty($hashtags)) {
  			foreach ($hashtags as $hashtag) {
 
