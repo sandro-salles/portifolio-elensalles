@@ -119,7 +119,7 @@ jQuery(function($){
         	$image_url[0] = $photo->guid;
         }
 ?>
-<?php $homeslides .= '{image : \''.$image_url[0].'\', thumb: \''.$small_image_url[0].'\', title: \'<div id="gallery_caption"><h2>'.htmlentities($photo->post_title, ENT_QUOTES).'</h2><br class="clear"/><div class="gallery_desc">'.$photo->post_content.htmlentities($photo->post_content, ENT_QUOTES).'</div></div>\'},'; ?>
+<?php $homeslides .= '{image : \''.$image_url[0].'\', thumb: \''.$small_image_url[0].'\', title: \'<div id="gallery_caption"><h2>'.htmlentities($photo->post_title, ENT_QUOTES).'</h2><br class="clear"/><div class="gallery_desc">'.htmlentities($photo->post_content, ENT_QUOTES).'</div></div>\'},'; ?>
 <?php
 	}
 ?>
